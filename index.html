@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <title>RockPaperScissor Game</title>
+  </head>
+  <body>
+
+      <div id="gameConsole">
+        <div id="title"><h2 id="titleHeader">Rock.Paper.Scissor.</h2></div>
+        <div id="scoreArea">
+          <div id="player1">
+            <h2>Player 1 : <span id="score1">0</span></h2>
+            </div>
+            <div id="player2">
+              <h2>Player 2 : <span id="score2">0</span></h2>
+              </div>
+
+          </div>
+          <div id="hands">
+            <div id="hand1">
+              <img id="player1Hand" src="assets\hand.png">
+              </div>
+            <div id="hand2">
+              <img id="player2Hand" src="assets\hand.png">
+              </div>
+            </div>
+            <div id="options">
+              <button id="rock" class="handAction" type="button" name="rock" onClick="bt_click()">Rock</button>
+              <button id="paper" class="handAction" type="button" name="paper" onClick="bt_click()">Paper</button>
+              <button id="scissor" class="handAction" type="button" name="scissor" onClick="bt_click()">Scissor</button>
+              </div>
+
+        </div>
+        <div class="modal">
+          <p id="result"></p>
+        </div>
+    <script type="text/javascript" src="main.js">
+    </script>
+  </body>
+</html>
